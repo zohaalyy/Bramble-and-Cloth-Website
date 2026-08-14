@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44" height="44">
+  <title>Bramble and Cloth logo</title>
+  <circle cx="22" cy="22" r="21" fill="#e9b84a"/>
+  <path d="M27 9l6 6-15 15-6-6z" fill="none" stroke="#1a3529" stroke-width="2.2" stroke-linejoin="round"/>
+  <circle cx="30" cy="12" r="1.7" fill="#1a3529"/>
+  <path d="M13 33c-4-3-4-8 0-10s8 1 6 5-8 3-8-2" fill="none" stroke="#1a3529" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 330" width="260" height="330">
+  <title>The Marlow coat</title>
+  <g fill="none" stroke="#24463a" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M94 42h72"/>
+    <path d="M94 42 58 58l-10 156 30 8"/>
+    <path d="M166 42l36 16 10 156-30 8"/>
+    <path d="M94 42c-10 50-16 104-16 158l4 106h96l4-106c0-54-6-108-16-158"/>
+    <path d="M94 42l36 50-12 214"/>
+    <path d="M166 42l-36 50 12 214"/>
+    <path d="M78 168h104"/>
+    <path d="M182 168l-8 22M78 168l8 22"/>
+    <circle cx="112" cy="140" r="4"/>
+    <circle cx="150" cy="140" r="4"/>
+    <circle cx="112" cy="200" r="4"/>
+    <circle cx="150" cy="200" r="4"/>
+    <path d="M48 200l-14 14 12 14 16-10"/>
+    <path d="M212 200l14 14-12 14-16-10"/>
+  </g>
+</svg>

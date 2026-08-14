@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visit us | Bramble &amp; Cloth</title>
+<meta name="description" content="Where to find Bramble and Cloth on Alcester Road in Moseley, how to get here, and how to send us a message.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<noscript>
+  <style>
+    .main-nav { display: block; }
+    .nav-toggle { display: none; }
+  </style>
+</noscript>
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span>
+        <span class="brand-name">Bramble &amp; Cloth</span>
+        <span class="brand-sub">Moseley</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav">
+      <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+
+    <nav class="main-nav nav-closed" id="mainNav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="size-guide.html">Size &amp; fit</a></li>
+        <li><a href="fittings.html">Fittings</a></li>
+        <li><a href="visit.html" aria-current="page">Visit us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-banner">
+    <div class="wrap">
+      <span class="eyebrow">Visit us</span>
+      <h1>14 Alcester Road, Moseley</h1>
+      <p class="lead">Above the bakery, green door, between the pharmacy and the record shop.</p>
+    </div>
+  </div>
+
+  <div class="wrap page-body">
+
+    <div class="two-col">
+      <section>
+        <h2>Getting here</h2>
+        <dl class="detail-list">
+          <dt>Address</dt>
+          <dd>14 Alcester Road, Moseley, Birmingham B13 8JP</dd>
+
+          <dt>Phone</dt>
+          <dd><a href="tel:+441214490224">0121 449 0224</a></dd>
+
+          <dt>Email</dt>
+          <dd><a href="mailto:hello@brambleandcloth.co.uk">hello@brambleandcloth.co.uk</a></dd>
+
+          <dt>Bus</dt>
+          <dd>The 1, 35, 50 and 76 all stop on Alcester Road within two minutes' walk</dd>
+
+          <dt>Train</dt>
+          <dd>Kings Heath station, twelve minutes on foot</dd>
+
+          <dt>Parking</dt>
+          <dd>Moseley Village car park, three minutes' walk. Two hours free before 10:00</dd>
+        </dl>
+
+        <h2>Access</h2>
+        <ul class="plain-list">
+          <li>Level entrance directly from the pavement, no step</li>
+          <li>Doorway 90 cm wide, shop floor clear to 1.2 metres throughout</li>
+          <li>Fitting room 1.6 metres square with a bench and a grab rail</li>
+          <li>Assistance dogs very welcome, water bowl behind the counter</li>
+          <li>No accessible toilet on the premises. Nearest is in the village car park</li>
+        </ul>
+        <p>If anything here would stop you visiting, tell us on the form below or <a href="fittings.html">when you book a fitting</a>. We would rather change how we do something than lose the customer.</p>
+      </section>
+
+      <section>
+        <h2>Finding the door</h2>
+        <img src="images/map-alcester-road.svg" width="360" height="320"
+             alt="Simple map. Bramble and Cloth is on the east side of Alcester Road, between Woodbridge Road and Church Road. The bus stop for the 1, 35, 50 and 76 is directly opposite, and Moseley Village car park is one street behind the shop.">
+        <p>The shop sign is small and sits above the bakery window. Our door is the green one to the right of it.</p>
+
+        <h2>Opening hours</h2>
+        <div class="table-scroll" role="region" tabindex="0" aria-label="Opening hours">
+          <table>
+            <caption>Shop opening hours</caption>
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Monday</th><td>Closed</td></tr>
+              <tr><th scope="row">Tuesday</th><td>10:00 to 17:30</td></tr>
+              <tr><th scope="row">Wednesday</th><td>10:00 to 17:30</td></tr>
+              <tr><th scope="row">Thursday</th><td>10:00 to 19:00, evenings by appointment</td></tr>
+              <tr><th scope="row">Friday</th><td>10:00 to 17:30</td></tr>
+              <tr><th scope="row">Saturday</th><td>10:00 to 17:30</td></tr>
+              <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <h2 id="messageHeading">Send us a message</h2>
+    <p>For anything that is not a booking. We answer email within one working day, Tuesday to Saturday.</p>
+
+    <div class="form-summary" id="errorSummary" role="alert" tabindex="-1" hidden>
+      <h2>There is a problem with this form</h2>
+      <ul id="errorSummaryList"></ul>
+    </div>
+
+    <div class="form-success" id="successBox" role="status" tabindex="-1" hidden>
+      <h2>Message sent</h2>
+      <p>Thank you. We will reply within one working day.</p>
+    </div>
+
+    <form id="messageForm" action="#" method="post" aria-labelledby="messageHeading">
+
+      <div class="form-field">
+        <label for="mName">Your name</label>
+        <input type="text" id="mName" name="name" autocomplete="name" required
+               aria-describedby="mNameError">
+        <span class="field-error" id="mNameError" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="mEmail">Email address</label>
+        <span class="hint" id="mEmailHint">So we can reply. For example, sam@example.com</span>
+        <input type="email" id="mEmail" name="email" autocomplete="email" required
+               aria-describedby="mEmailHint mEmailError">
+        <span class="field-error" id="mEmailError" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="mTopic">What is it about?</label>
+        <select id="mTopic" name="topic" required aria-describedby="mTopicError">
+          <option value="">Please choose</option>
+          <option value="stock">Stock and sizes</option>
+          <option value="alterations">Alterations</option>
+          <option value="made-to-measure">Made to measure</option>
+          <option value="access">Access and visiting</option>
+          <option value="other">Something else</option>
+        </select>
+        <span class="field-error" id="mTopicError" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="mMessage">Your message</label>
+        <span class="hint" id="mMessageHint">At least 10 characters, up to 500.</span>
+        <textarea id="mMessage" name="message" maxlength="500" required
+                  aria-describedby="mMessageHint mMessageError"></textarea>
+        <span class="field-error" id="mMessageError" hidden></span>
+      </div>
+
+      <button class="btn" type="submit">Send message</button>
+    </form>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div>
+        <h2>Bramble &amp; Cloth</h2>
+        <p>14 Alcester Road<br>
+           Moseley<br>
+           Birmingham B13 8JP</p>
+      </div>
+      <div>
+        <h2>Get in touch</h2>
+        <ul>
+          <li>Phone: <a href="tel:+441214490224">0121 449 0224</a></li>
+          <li>Email: <a href="mailto:hello@brambleandcloth.co.uk">hello@brambleandcloth.co.uk</a></li>
+          <li>Tuesday to Saturday, 10:00 to 17:30</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="size-guide.html">Size and fit</a></li>
+          <li><a href="fittings.html">Book a fitting</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

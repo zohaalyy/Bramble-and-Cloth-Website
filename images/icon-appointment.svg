@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44" height="44">
+  <title>Appointment</title>
+  <g fill="none" stroke="#24463a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="10" width="24" height="24" rx="3"/>
+    <path d="M5 18h24M12 6v7M22 6v7"/>
+    <circle cx="32" cy="30" r="8" fill="#faf6f1"/>
+    <path d="M32 26v4l3 2"/>
+  </g>
+</svg>

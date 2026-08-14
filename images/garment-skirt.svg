@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 330" width="260" height="330">
+  <title>The Pell midi skirt</title>
+  <g fill="none" stroke="#24463a" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M82 60h96v26H82z"/>
+    <path d="M82 86 42 288h176L178 86"/>
+    <path d="M130 86v202"/>
+    <path d="M104 86l-14 202"/>
+    <path d="M156 86l14 202"/>
+    <path d="M42 288c30 10 146 10 176 0"/>
+    <circle cx="164" cy="73" r="3.4"/>
+  </g>
+</svg>

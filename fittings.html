@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a fitting | Bramble &amp; Cloth</title>
+<meta name="description" content="Book a free hour in the fitting room at Bramble and Cloth, Moseley. Tell us what you need and we will have it ready.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<noscript>
+  <style>
+    .main-nav { display: block; }
+    .nav-toggle { display: none; }
+  </style>
+</noscript>
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="44" height="44">
+      <span>
+        <span class="brand-name">Bramble &amp; Cloth</span>
+        <span class="brand-sub">Moseley</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav">
+      <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+
+    <nav class="main-nav nav-closed" id="mainNav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="size-guide.html">Size &amp; fit</a></li>
+        <li><a href="fittings.html" aria-current="page">Fittings</a></li>
+        <li><a href="visit.html">Visit us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-banner">
+    <div class="wrap">
+      <span class="eyebrow">Fittings</span>
+      <h1>An hour in the room, on your own terms</h1>
+      <p class="lead">Free, no obligation to buy anything, and the fitting room is yours for the whole hour.</p>
+    </div>
+  </div>
+
+  <div class="wrap page-body">
+
+    <div class="two-col">
+      <section>
+        <h2>What a fitting actually is</h2>
+        <p>You tell us roughly what you are looking for and what size you think you are. We pull those pieces in two or three sizes each and have them hanging in the room before you arrive, so you are not walking the shop floor collecting hangers.</p>
+        <p>Someone stays nearby to fetch other sizes, but nobody comes in unless you ask them to. If you want a second opinion you can have one, and if you would rather be left alone you say so on the form and that is what happens.</p>
+        <p>Thursday evenings between 17:30 and 19:00 are appointment only, so the shop is empty apart from other people who have booked.</p>
+
+        <h2>Before you come</h2>
+        <ul class="plain-list">
+          <li>Use the <a href="size-guide.html">size finder</a> so we pull the right sizes</li>
+          <li>Bring the shoes you would wear with it, if hem length matters</li>
+          <li>Allow a full hour, and a little longer on a Saturday</li>
+          <li>Bring whoever you like, or come on your own</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Accessibility</h2>
+        <p>The shop is on the ground floor with a level entrance from Alcester Road. The fitting room is 1.6 metres square with a bench and a grab rail, and the door opens outwards.</p>
+        <p>There is no accessible toilet on the premises. The nearest is in Moseley Village car park, about three minutes away.</p>
+        <p>We can lower the lighting, turn the music off, and hold the shop closed to other customers for a fitting. Say so on the form and we will do it without being asked twice.</p>
+      </section>
+    </div>
+
+    <h2 id="bookingHeading">Book your fitting</h2>
+    <p>We will confirm by email within one working day. Nothing here takes payment and nothing commits you to buying.</p>
+    <div class="form-summary" id="errorSummary" role="alert" tabindex="-1" hidden>
+      <h2>There is a problem with this form</h2>
+      <ul id="errorSummaryList"></ul>
+    </div>
+
+    <div class="form-success" id="successBox" role="status" tabindex="-1" hidden>
+      <h2>Request received</h2>
+      <p>Thank you. We will email you within one working day to confirm the time.</p>
+    </div>
+
+    <form id="bookingForm" action="#" method="post" aria-labelledby="bookingHeading">
+
+      <div class="form-field">
+        <label for="bName">Your name</label>
+        <input type="text" id="bName" name="name" autocomplete="name" required
+               aria-describedby="bNameError">
+        <span class="field-error" id="bNameError" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="bEmail">Email address</label>
+        <span class="hint" id="bEmailHint">We confirm by email. For example, sam@example.com</span>
+        <input type="email" id="bEmail" name="email" autocomplete="email" required
+               aria-describedby="bEmailHint bEmailError">
+        <span class="field-error" id="bEmailError" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="bPhone">Phone number (optional)</label>
+        <span class="hint" id="bPhoneHint">10 or 11 digits. Only used if we need to move your slot.</span>
+        <input type="tel" id="bPhone" name="phone" autocomplete="tel"
+               aria-describedby="bPhoneHint bPhoneError">
+        <span class="field-error" id="bPhoneError" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="bDate">Preferred date</label>
+        <span class="hint" id="bDateHint">We are closed on Sundays and Mondays. Please choose a date at least one day ahead.</span>
+        <input type="date" id="bDate" name="date" required
+               aria-describedby="bDateHint bDateError">
+        <span class="field-error" id="bDateError" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="bTime">Preferred time</label>
+        <select id="bTime" name="time" required aria-describedby="bTimeError">
+          <option value="">Please choose</option>
+          <option value="10:00">10:00</option>
+          <option value="11:30">11:30</option>
+          <option value="13:00">13:00</option>
+          <option value="14:30">14:30</option>
+          <option value="16:00">16:00</option>
+          <option value="17:30">17:30 (Thursdays only)</option>
+        </select>
+        <span class="field-error" id="bTimeError" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="bOccasion">What are you shopping for?</label>
+        <select id="bOccasion" name="occasion" required aria-describedby="bOccasionError">
+          <option value="">Please choose</option>
+          <option value="wedding-guest">A wedding, as a guest</option>
+          <option value="wedding-party">A wedding, in the party</option>
+          <option value="work">Work or interviews</option>
+          <option value="event">A party or an event</option>
+          <option value="alterations">Alterations to something I already own</option>
+          <option value="browsing">Just having a look</option>
+        </select>
+        <span class="field-error" id="bOccasionError" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="bSize">Sizes you usually wear (optional)</label>
+        <span class="hint" id="bSizeHint">For example, "16 on top, 18 on the bottom". This is only so we pull the right things.</span>
+        <input type="text" id="bSize" name="size" maxlength="80" aria-describedby="bSizeHint">
+      </div>
+
+      <div class="form-field">
+        <label for="bNeeds">Anything that would make the visit easier? (optional)</label>
+        <span class="hint" id="bNeedsHint">Lighting, quiet, step free routes, coming with a wheelchair, bringing a child, anything at all. Up to 400 characters.</span>
+        <textarea id="bNeeds" name="needs" maxlength="400" aria-describedby="bNeedsHint"></textarea>
+      </div>
+
+      <div class="field-group">
+        <div class="checkbox-row">
+          <input type="checkbox" id="bConsent" name="consent" required aria-describedby="bConsentError">
+          <label for="bConsent">I am happy for Bramble &amp; Cloth to email me about this booking.</label>
+        </div>
+        <span class="field-error" id="bConsentError" hidden></span>
+      </div>
+
+      <button class="btn" type="submit">Request this fitting</button>
+    </form>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div>
+        <h2>Bramble &amp; Cloth</h2>
+        <p>14 Alcester Road<br>
+           Moseley<br>
+           Birmingham B13 8JP</p>
+      </div>
+      <div>
+        <h2>Get in touch</h2>
+        <ul>
+          <li>Phone: <a href="tel:+441214490224">0121 449 0224</a></li>
+          <li>Email: <a href="mailto:hello@brambleandcloth.co.uk">hello@brambleandcloth.co.uk</a></li>
+          <li>Tuesday to Saturday, 10:00 to 17:30</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="size-guide.html">Size and fit</a></li>
+          <li><a href="visit.html">Visit us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

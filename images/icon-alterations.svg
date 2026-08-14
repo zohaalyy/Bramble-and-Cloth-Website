@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44" height="44">
+  <title>Alterations</title>
+  <g fill="none" stroke="#24463a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="32" r="5"/>
+    <circle cx="27" cy="32" r="5"/>
+    <path d="M16 29 34 7M23 29 5 7"/>
+    <path d="M38 20a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
+    <path d="M34 24v8"/>
+  </g>
+</svg>

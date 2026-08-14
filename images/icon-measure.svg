@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44" height="44">
+  <title>Tape measure</title>
+  <g fill="none" stroke="#24463a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 34c-6-6-2-16 6-18s16 2 16 9-8 10-13 6 0-11 5-8"/>
+    <path d="M13 12l2 4M20 9l2 4M27 9l2 4M33 13l3 3M36 20l4 1"/>
+  </g>
+</svg>

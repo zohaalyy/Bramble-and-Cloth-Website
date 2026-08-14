@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 330" width="260" height="330">
+  <title>The Halden jumpsuit</title>
+  <g fill="none" stroke="#24463a" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M96 44h68v22H96z"/>
+    <path d="M96 44 78 52l-6 34"/>
+    <path d="M164 44l18 8 6 34"/>
+    <path d="M96 66c-8 28-12 50-12 74h92c0-24-4-46-12-74"/>
+    <path d="M80 140h100"/>
+    <path d="M84 140l-24 152h50l16-108"/>
+    <path d="M176 140l24 152h-50l-16-108"/>
+    <path d="M126 184h8"/>
+    <path d="M180 140l22 10-4 12-20-10"/>
+  </g>
+</svg>
